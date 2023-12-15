@@ -120,7 +120,7 @@
                             <div class="publication-links">
                                 <!-- TODO PDF Link. -->
                                 <span class="link-block">
-                                    <a target="_blank" href=""
+                                    <a target="_blank" href="assets/pdfs/openeqa_arxiv.pdf"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="ai ai-arxiv"></i>
@@ -181,24 +181,22 @@
 
     <section class="hero is-light">
         <div class="hero-body">
-          <div class="container">
-            <div id="results-carousel" class="carousel results-carousel">
-              <div class="item item-steve">
-                <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-                  <source src="assets/videos/eqa_scannet_teaser.mp4"
-                          type="video/mp4">
-                </video>
-              </div>
-              <div class="item item-chair-tp">
-                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-                  <source src="assets/videos/eqa_teaser.mp4"
-                          type="video/mp4">
-                </video>
-              </div>
+            <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-steve">
+                        <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                            <source src="assets/videos/eqa_scannet_teaser.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-chair-tp">
+                        <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                            <source src="assets/videos/eqa_teaser.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
     <section class="section">
         <div class="container is-max-desktop">
@@ -233,7 +231,7 @@
             <div class="rows">
                 <div class="rows is-centered ">
                     <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvc1">OpenEQA Benchmark</span></h2>
+                        <h2 class="title is-3"><span class="dvc1">OpenEQA Dataset Statistics</span></h2>
                         <img src="assets/images/figure-3.png" class="interpolation-image" alt=""
                             style="display: block; margin-left: auto; margin-right: auto" width="100%">
                         <span style="font-size: 110%">
@@ -260,11 +258,37 @@
             <div class="rows">
                 <div class="rows is-centered ">
                     <div class="row is-full-width">
+                        <h2 class="title is-3"><span class="dvc1">LLM-Match Evaluation Workflow</span></h2>
+                        <img src="assets/images/workflow.png" class="interpolation-image" alt=""
+                            style="display: block; margin-left: auto; margin-right: auto" width="55%">
+                        <!-- <span style="font-size: 110%">
+                            <span style="font-weight: bold">
+                                <br />
+                                Category-level performance on EM-EQA. </span>
+                            We find that agents with access to visual information excel at localizing and
+                            recognizing objects and attributes, and make better use of this information to answer
+                            questions that require world knowledge. However, on other categories performance is
+                            closer to the blind LLM baseline (GPT-4), indicating
+                            substantial room for improvement on OpenEQA.
+                        </span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">
                         <h2 class="title is-3"><span class="dvc1">Baseline Performance</span></h2>
                         <img src="assets/images/category-level_performance.png" class="interpolation-image" alt=""
                             style="display: block; margin-left: auto; margin-right: auto" width="55%">
                         <span style="font-size: 110%">
-                            <br />
+                            <span style="font-weight: bold">
+                                <br />
+                                Category-level performance on EM-EQA. </span>
                             We find that agents with access to visual information excel at localizing and
                             recognizing objects and attributes, and make better use of this information to answer
                             questions that require world knowledge. However, on other categories performance is
