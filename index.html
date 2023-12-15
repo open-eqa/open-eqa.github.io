@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./static/css/academicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="./static/css/index.css">
-    <link rel="icon" href="./assets/images/favicon.svg">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./static/js/fontawesome.all.min.js"></script>
     <script src="./static/js/bulma-carousel.min.js"></script>
@@ -234,7 +233,7 @@
             <div class="rows">
                 <div class="rows is-centered ">
                     <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvc1">Overview</span></h2>
+                        <h2 class="title is-3"><span class="dvc1">OpenEQA Benchmark</span></h2>
                         <img src="assets/images/figure-3.png" class="interpolation-image" alt=""
                             style="display: block; margin-left: auto; margin-right: auto" width="100%">
                         <span style="font-size: 110%">
@@ -242,10 +241,11 @@
                                 <br />
                                 Example questions and dataset statistics of OpenEQA.</span> The episode history <i>H</i>
                             provides a human-like tour of a home. EQA agents must answer diverse, human-generated
-                            questions $Q$ from 7 EQA categories, aiming match the ground answers <i>A*</i>. Tours are
-                            collected from diverse environments including home and office locations (not shown above).
-                            Additional dataset examples are in~\cref{app:dataset-examples}. Dataset statistics (right)
-                            break down the question distribution by video source (top), question category (middle), and
+                            questions <i>Q</i> from 7 EQA categories, aiming match the ground answers <i>A*</i>. Tours
+                            are collected from diverse environments including home and office locations (not shown
+                            above).
+                            Dataset statistics (right) break down the question distribution by video source (top),
+                            question category (middle), and
                             episodic memory vs active setting. Note that, by design, the HM3D questions are shared
                             across the EM-EQA and A-EQA settings.
                         </span>
@@ -255,8 +255,31 @@
         </div>
     </section>
 
-    <!--Conclusion-->
     <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3"><span class="dvc1">Baseline Performance</span></h2>
+                        <img src="assets/images/category-level_performance.png" class="interpolation-image" alt=""
+                            style="display: block; margin-left: auto; margin-right: auto" width="50%">
+                        <span style="font-size: 110%">
+                            <span style="font-weight: bold">
+                                <br />
+                                We find that agents with access to visual information excel at localizing and
+                                recognizing objects and attributes, and make better use of this information to answer
+                                questions that require world knowledge. However, on other categories performance is
+                                closer to the blind LLM baseline (GPT-4), indicating
+                                substantial room for improvement on OpenEQA.
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Conclusion-->
+    <!-- <section class="section">
         <div class="container is-max-widescreen">
             <div class="rows">
                 <div class="rows is-centered ">
@@ -281,7 +304,7 @@
                     </div>
                 </div>
             </div>
-    </section>
+    </section> -->
 
 
     <section class="section" id="BibTeX">
