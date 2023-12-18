@@ -1,1 +1,1 @@
-# openeqa.github.io
+# open-eqa.github.io
